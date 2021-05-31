@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="pattern">
+	<!-- nav -->
+	<nav class="fixed max-w-full bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 shadow-md container px-6 py-3 mx-auto">
+		<div class="flex items-center justify-center">
+			<div class="">
+				<a href="" class="text-xl font-bold text-white">BRAND</a>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- heading -->
+	<div class="container mx-auto px-6 pt-16">
+		<div class="flex flex-col items-center justify-center">
+			<div>
+				<h1 id="title" class="pt-8 text-5xl font-bold text-gray-800">Survey Form</h1>
+			</div>
+			<div>
+				<p id="description" class="py-8 text-lg ">Thank you for taking the time to help us improve the platform</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- form -->
+		<form action="" id="survey-form" class="container flex items-center justify-center mx-auto px-6 py-160">
+			<div class="w-full max-w-2xl px-5 py-10 m-auto mt-10 bg-white rounded-xl shadow-md">
+				<div class="mb-6 text-3xl font-light text-center text-gray-800 dark:text-white">
+            Give Us Feedback !
+        </div>
+				
+				<div class="grid max-w-xl grid-cols-2 gap-4 m-auto">
+					<div class="col-span-2 lg:col-span-1">
+						<div class="">
+							<label for="name" id="name-label" class="text-md p-2">
+								Name
+							</label>
+							<input type="text" id="name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name="name" required placeholder="Name"/>
+						</div>
+					</div>
+					<div class="col-span-2 lg:col-span-1">
+						<div class="">
+							<label for="email" id="email-label" class="text-md p-2">
+								Email
+							</label>
+							<input type="email" id="email" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name="email" required placeholder="Email"/>
+						</div>
+					</div>
+					<div class="col-span-2">
+						<div class="">
+							<label for="number" id="number-label" class="text-md p-2">
+								Age
+							</label>
+							<input type="number" id="number"  min="1" max="99" value="18" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name="number" required placeholder="Email"/>
+						</div>
+					</div>
+					<div class="col-span-2">
+						<div class="">
+							<label for="role" id="role-label" class="text-md p-2">
+								Role
+							</label>
+							<select id="dropdown" name="role" class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"/>
+								<option value="" selected>Select Role</option>
+								<option value="double chocolate">Double Chocolate</option>
+								<option value="vanilla">Vanilla</option>
+								<option value="strawberry">Strawberry</option>
+								<option value="caramel">Caramel</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-span-2">
+						<div class="flex flex-col gap-4">
+							<label class="text-md mx-2 mt-2">
+								<p>Would you recommend freeCodeCamp to a friend?</p>
+							</label>
+							<label class="inline-flex items-center">
+        <input type="radio" name="vehicle" class="h-5 w-5 text-red-600" value="car"/>
+            <span class="ml-2 text-gray-700">
+                Car
+            </span>
+        </label>
+        <label class="inline-flex items-center">
+            <input type="radio" name="vehicle" class="h-5 w-5 text-red-600" value="bycyle"/>
+                <span class="ml-2 text-gray-700">
+                    Cycle
+                </span>
+            </label>
+						</div>
+					</div>
+					<div class="col-span-2">
+						<div class="flex flex-col gap-4">
+							<label class="text-md mx-2 mt-4">
+								<p>Would you recommend freeCodeCamp to a friend?</p>
+							</label>
+							<label class="inline-flex items-center">
+        <input type="checkbox" name="vehicle" class="h-5 w-5 text-red-600" value="car"/>
+            <span class="ml-2 text-gray-700">
+                Car
+            </span>
+        </label>
+        <label class="inline-flex items-center">
+            <input type="checkbox" name="vehicle" class="h-5 w-5 text-red-600" value="bycyle"/>
+                <span class="ml-2 text-gray-700">
+                    Cycle
+                </span>
+            </label>
+						</div>
+					</div>
+					<div class="col-span-2">
+						<label for="name" class="text-gray-700">
+							<textarea class="flex-1 appearance-none border border-gray-300 w-full py-2 px-6 bg-white text-gray-700 placeholder-gray-400 rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" id="comment" placeholder="Enter your comment" name="comment" rows="5" cols="40"></textarea>
+						</label>
+					</div>
+					<div class="col-span-2 text-right">
+						<button id="submit" type="submit" class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                            Send
+                        </button>
+					</div>
+				</div>
+			</div>
+		</form>
+</body>
+</html>
